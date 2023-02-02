@@ -18,3 +18,6 @@ Methodology:
 7. Multi-class Models (OvR and OvO) 
 8. Voting Ensemble Models 
 9. Final model comparsion and results
+
+Summary of Results:<br>
+The Voting Ensemble model with OvR (Random Forest, Histogram-Based Gradient Boost, and AdaBoost) with soft voting achieved the highest accuracy score on the test set at 0.4784. This accuracy score is slightly higher than the validation accuracy score of 0.4728. Moreover, the voting ensemble approach sucessfully took three tree models and outputted a model that performed better than all other models. The runner up model goes to the optimized Histogram Gradient Boosting Classifier model which achieved a testing accuracy of 0.4781. This model is faster, more efficient and is a more simplied model than the voting ensemble model. There are several reasons that may be preventing the models from achieving higher performance. First, the dataset contains mostly categorical features with very few numeric features. Second, the data is also skewed in terms of distribution of features, with many of the features not following a normal distribution. Lastly, the target and predictor features are highlyn imbalanced, which becomes more challenging for the algorithm to learn and predict.
